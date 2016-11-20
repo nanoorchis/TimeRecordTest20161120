@@ -1,0 +1,94 @@
+
+## 20161108 android
+- 开始做自己想要的计时应用。
+- SharedPreferences中的数据只能读取一次。
+
+## 20161112 android
+- 先建立layout，两个button和TextView和EditText。
+- 为两个按钮添加监听器。
+- 在监听器中调用write和read方法。
+- 第一个监听器将获取的文本当作参数传入方法write。
+- 第二个监听器则是设置文本内容为read方法的返回值。
+- 看write方法。
+- 先用openFileOut方法获得FileOutputStream对象。
+- 再将FileOutputStream对象包装成PrintStream对象。
+- 使用PrintStream的println方法输出。
+- 用完要close。
+- 看read方法
+- 使用openFileInput方法获得FileInputStream对象。
+- 使用while循环读取。
+- Byte[]和byte[]原来不一样。数据包装类与基本类型。
+- 想起了之前学的JAVA IO，但是什么也想不起来了。需要写入多种数据类型的时候再复习吧。
+- 先有个大概框架，目前速度最重要。
+- read方法参数弄错了。导致读出数据错误。
+- 现在能读能写。感觉完全可以开始自己的应用了。
+- 先仿照爱今天的界面来。
+- 
+
+## 20161113 android
+- 想抄爱今天的界面才发现原来书上的例子在实际的软件面前就是小儿科。实际软件的一个很小的区域就包含了自己学的好几种视图。
+- 最上最下的tabVie自己之前没有实验成功，先不管。
+- 先将界面分为上中下三个View。
+- 先明确下自己的小目标。可对自己目前每天做的事情进行时间总结。将具体的数据写入内存卡上。
+- 年-月-日-星期-时-分-秒||start（stop）||标签
+- 目前标签分：固定、吃饭、上班、睡觉、锻炼、写随笔、学安卓、看成长帖、学习。
+- 突然发现好乱，不知从何下手。上下先用LinearLayout，中间先用个列表。具体啥列表，翻书。中间用Listview，然后用SimpleAdapter设置具体内容。
+- 先实现书中的列表，搭建出框架，然后再修改。
+- 视图基本完成。
+- 给列表增加监听器。单击后改变图标，再次单击，恢复图标。
+- 如何改变simpleAdapter中的内容？
+- 先获取list，再获list中的元素map。
+- 修改map，修改list。
+- 更新adapter。
+- 写入字符串。
+- 在底部增加一个TextView 和一个Button来查看写入的数据。
+- 用sharedPreference来保存isEnd的状态。
+- 现在是程序退出后再进入，记录会出错。
+- 用sharedPreference来保存之前正在记录的是第几个。
+- 感觉有点乱了。自己目前希望情况是，如果isEnd为false，则希望countNo代表的图片为正在计时的图片。
+- 还是更新adapter需要按照套路来。
+- 现在有点乱了，在PPT里分析下流程。
+- 自己记录时间，记录的有三个东西。时间，状态，开始还是结束，这个用isEnd来记录，项目，这个用countNo来记录。每一次单击，都是基于这三个变量来进行的。
+
+## 20161114 android
+- 自己希望添加的功能。双击项目时，如果该项目正在计时，没有添加备注，则弹窗提示添加备注，如果有备注，则提示修改备注。在停止计时时，将记时时，将记录写入。
+- 先看添加ListView双击监听器的方法。
+- 发现之前的isEnd变量的功能可以用countNo的值来代替。改。
+- 测试方法。同一位项目开始结束。不同项目开始结束。开始项目退出再进入再结束。
+- 改好了。
+- 添加双击弹出对话框。
+- 朩有双击，只有长按，那就长按吧。
+- 定义弹出对话框的界面alertDialogView
+- 卡在如何获取弹出的对话框中文本上。
+- 最后好使的办法自己也很意外，在监听器新建一个EditText，然后用setView加到builder中，然后直接调用。走过的弯路有bingding，inflator。
+
+## 20161118 android
+- 实现统计当天写作时间的功能
+- 使用randomAccessFile读取倒数十行数据。以后不够了，增加行数。
+- 先尝试读取并输出后十行的数据。
+- 还是用FIleinputStream，raf打开文件失败。
+- 出错class.dex must be different
+- Build -> Clean Project
+- 解决。
+- 卡在raf找不到文件上。明天继续
+
+## 20161118 android
+- SimpleDateForma目前使用的是12小时制，需要使用24小时制。
+- H大写即二十四小时。
+- open failed: ENOENT (No such file or directory)
+- 使用File f = new File(getFilesDir(),FILE_NAME)；解决。
+- 在文件名前需要加上路径。而路径在android中用getFilesDir()来获取。
+- raf.read()一次会读几个seek中的数字？
+- 一个read数字加1.
+- 目前可以到倒数第十一行开头。
+- rafyfbm读出来的中文是乱码。
+- result=new String(result.getBytes("8859_1"), "utf-8");
+- raf读取后使用的编码是ISO-8859-1，自己目前android项目中用的代码是utf-8。
+- 记得自己之前查过如何获得两个Date之前的时间间隔，在记录中竟然没有找到，发现代码的整理也是一个问题。
+- 计算两个Date之间的时间间隔。
+- 目前统计写随笔用时的功能可以用了。
+- 但目前自己的思路是统计最后十条记录中标签为写随笔的记录的累计时间。
+- 理想情况是统计当天的写作标签，也不对，半夜写的怎么算。
+- 先就这样，保证自己能用起来。后面学习了SQLite了再完善。
+- 目前先解决有无的问题，然后在学习中再完善自己的程序。
+
