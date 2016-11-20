@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/huangjing/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_a3f966de98353eecbe4d74b19cb3132e55df45ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_00272ba720140fe8c9d8435bf5ec4dfaca633591/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="cce34f00c4ab1892ecd070ad6246f912b9335659">
+        <dex dex="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b0adbdea775985dea87009b3b358b29fede23063/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_5ead40c5a46b97ff4a3f119a4727e19de49488c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="782762ba2ed465570f4cbe322369cf1ebc9c440f">
+        <dex dex="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2b0f8b48d17fc8e8c5dde8b739a4288a5bbfd310/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/com/android/databinding/baseLibrary/2.2.2/baseLibrary-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8e3519b9d5287840df40776a8268ae336ca9f063">
+        <dex dex="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/transforms/dex/debug/folders/1000/10/baseLibrary-2.2.2_7ed53c723ae13fdba19a1b45153e478d184e8ae5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.databinding-library-1.2.1_50dbdfbfbe641fd848fcc512decc2ab08e3cca89/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_974bfe686ff87db5210365adb776ef267df9c608/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_ad66e13963fdb75a9cebfc0479b09d47fa372ba4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/exploded-aar/com.android.databinding/adapters/1.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.databinding-adapters-1.2.1_a40f0ac18de0ee17a12f660df8f6a0c4b5d764f0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/huangjing/AndroidStudioProjects/androidPractice/TimeRecordTest20161108/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_9be1f8a3fdd4a48b887dd4e52bc183b0b8af6fae/classes.dex" />
+    </item>
+
+</items>
