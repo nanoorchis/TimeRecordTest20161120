@@ -167,6 +167,7 @@ public class MainActivity extends AppCompatActivity {
     class mainListOnItemLongClickListener implements AdapterView.OnItemLongClickListener{
         public boolean onItemLongClick(AdapterView<?> parent, View view, int position,long id){
             final EditText inputText = new EditText(MainActivity.this);
+            final int pNo = position;
             new AlertDialog.Builder(MainActivity.this)
                     .setTitle((countNo==-1?"没有正在进行的项目。\n请单击来开始一个项目。\n":"")+((remarks==null)?"请输入备注：":"请修改备注："))
                     .setView(inputText)
@@ -182,6 +183,12 @@ public class MainActivity extends AppCompatActivity {
                                                 "请单击来开始一个项目。",
                                         Toast.LENGTH_LONG).show();
                             }
+
+                            //20161120在备注中显示添加的remarks
+                            Map<String,Object> item = listItems.get(pNo);
+                            item.put("desc",remarks);
+                            listItems.set(pNo,item);
+                            simpleAdapter.notifyDataSetChanged();
                         }
                     })
                     .setNegativeButton("取消",new DialogInterface.OnClickListener(){
